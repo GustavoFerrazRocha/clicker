@@ -15,14 +15,14 @@ body{
     height: 100vh;
 }
 
-.content1{
+.login_content{
     display: flex;
     width: 75%;
     height: 65%;
     display: none;
 }
 
-.content2{
+.signup_content{
     display: flex;
     width: 75%;
     height: 65%;
@@ -59,11 +59,11 @@ body{
     flex-direction: column;
 }
 
-.content2 .login {
+.signup_content .login {
     flex: 1;
 }
 
-.content2 .signup{
+.signup_content .signup{
     flex: 1.5;
 }
 
@@ -135,14 +135,14 @@ h2{
     color: rgb(255, 188, 62);
 }
 
-.content2 .signup form{
+.signup_content .signup form{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
 }
 
-.content2 .signup form input[type="email"], .content2 .signup form input[type="password"], .content2 .signup form input[type="text"]{
+.signup_content .signup form input[type="email"], .signup_content .signup form input[type="password"], .signup_content .signup form input[type="text"]{
     border: 2px solid white;
     background-color: transparent;
     padding: 5px;
@@ -150,11 +150,11 @@ h2{
     width: 100%;
 }
 
-.content2 .login{
+.signup_content .login{
     align-items: center;
 }
 
-.content2 .login input[type="button"]{
+.signup_content .login input[type="button"]{
     margin-top: 20px;
     width: 35%;
     background-color: transparent;
@@ -165,13 +165,13 @@ h2{
     transition: .3s;
 }
 
-.content2 .login input[type="button"]:hover {
+.signup_content .login input[type="button"]:hover {
     background-color: rgb(255, 188, 62);
     color: white;
 }
 
 
-.content2 .signup input[type="submit"]{
+.signup_content .signup input[type="submit"]{
     margin-top: 20px;
     width: 50%;
     background-color: transparent;
@@ -183,15 +183,15 @@ h2{
     transition: .3s;
 }
 
-.content2 .signup input[type="submit"]:hover {
+.signup_content .signup input[type="submit"]:hover {
     background-color: white;
     color: rgb(255, 188, 62);
 }
 
-.content2 .login{
+.signup_content .login{
     border-radius: 0 10px 10px 0;
 }
 
-.content2 .signup{
+.signup_content .signup{
     border-radius: 10px 0 0 10px;
 }
