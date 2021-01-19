@@ -63,23 +63,36 @@ section{
     background-color: #252525;
 }
 
-#coin{
-    user-select: none;
-    transition: .2s;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
 }
 
 .moeda{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .moeda img{
-    width: 20%;
+    user-select: none;
+    transition: .2s;
+    width: 50%;
 }
 
-.container h1{
+.infos h1{
     text-align: center;
     margin: 50px 0;
     font-size: 50px;
 }
+
+.loja{
+    background-color: rgb(255, 178, 34);
+    width: 80vw;
+    height: auto;
+}
+
