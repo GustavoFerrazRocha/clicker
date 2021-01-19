@@ -47,12 +47,14 @@ header nav ul li a{
     color: white;
 }
 
-.active{
+header nav ul li:hover{
     background-color: #ffd100;
+    transition: 0.5s;
 }
 
-.black{
+header nav ul li:hover a{
     color: black;
+    transition: 0.5s;
 }
 
 
