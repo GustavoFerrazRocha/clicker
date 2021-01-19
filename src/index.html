@@ -13,19 +13,44 @@
         <div class="logo"><h1>Coin Clicker</h1></div>
         <nav>
             <ul>
-                <li><a href="#">SHOP</a></li>
+                <li><a href="#loja">SHOP</a></li>
                 <li><a href="./login.html">LOGIN</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <div class="container">
-            <h1 class="coin">Coins: 0</h1>
+        <div class="container column">
+            <div class="infos">
+                <h1 class="coin">Coins: 0</h1>
+            </div>
             <div class="moeda">
                 <img src="./assets/svg/001-coin.svg" alt="coin" id="coin" onclick="clickBtn()">
             </div>
         </div>
     </section>
     <script src="./scripts/main.js"></script>
+
+    <section class="loja_section" id="loja">
+        <div class="container">
+            <div class="loja">
+                <div class="card">
+                    <img src="./assets/svg/002-shekel.svg" alt="coin1">
+                    <h1>Moeda 1</h1>
+                </div>
+                <div class="card">
+                    <img src="./assets/svg/003-coin-1.svg" alt="coin2">
+                </div>
+                <div class="card">
+                    <img src="./assets/svg/004-rupee.svg" alt="coin3">
+                </div>
+                <div class="card">
+                    <img src="./assets/svg/005-euro.svg" alt="coin4">
+                </div>
+                <div class="card">
+                    <img src="./assets/svg/006-chinese-yuan.svg" alt="coin5">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
