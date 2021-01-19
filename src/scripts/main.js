@@ -1,14 +1,24 @@
 const store = document.getElementById('store');
 let score = 0;
 let storeLevel = 1; 
-currentScore = () => {document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' + score;}
+currentScore = () => {document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' + localStorage.score;}
 
+currentScore();
 
 function clickBtn(){
-    score = score + 1;
+    if(typeof(Storage) !== "undefined"){
+        if(localStorage.score){
+            localStorage.score = Number(localStorage.score)+1;
+        } else{
+            localStorage.score = 1;
+        }
+        
+    }
     currentScore();
-    coin.style.transform = 'scale(1.1)'
-    setInterval(function(){coin.style.transform = 'scale(1.0)'},  500)
+    score = score + 1;
+    coin.style.transform = 'scale(1.1)';
+    setInterval(function(){coin.style.transform = 'scale(1.0)'},  500);
+
 }
 
 function storeUp(){
