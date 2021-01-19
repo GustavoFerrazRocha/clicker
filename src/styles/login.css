@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content1{
+    display: flex;
+    width: 75%;
+    height: 65%;
+    display: none;
+}
+
+.content2{
+    display: flex;
+    width: 75%;
+    height: 65%;
+}
+
+.login{
+    flex: 1.5;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login h1{
+    color: rgb(255, 188, 62);
+}
+
+.signup h1{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.signup{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(255, 188, 62);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content2 .login {
+    flex: 1;
+}
+
+.content2 .signup{
+    flex: 1.5;
+}
+
+
+h1{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 35px;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(105, 105, 105);
+    margin-bottom: 10px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.login form input, .signup form input{
+    margin: 5px;
+    outline: transparent;
+}
+
+.login form input[type="email"], .login form input[type="password"] {
+    border: 2px solid rgb(255, 188, 62);
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 3px;
+    width: 40%;
+}
+
+.login form input[type="submit"]{
+    margin-top: 20px;
+    width: 30%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 188, 62);
+    color: rgb(105, 105, 105);
+    padding: 7px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.login form input[type="submit"]:hover{
+    background-color: rgb(255, 188, 62);
+    color: white;
+}
+
+.signup input[type="button"]{
+    margin-top: 20px;
+    width: 35%;
+    background-color: transparent;
+    outline: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.signup input[type="button"]:hover {
+    background-color: white;
+    color: rgb(255, 188, 62);
+}
+
+.content2 .signup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.content2 .signup form input[type="email"], .content2 .signup form input[type="password"], .content2 .signup form input[type="text"]{
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.content2 .login{
+    align-items: center;
+}
+
+.content2 .login input[type="button"]{
+    margin-top: 20px;
+    width: 35%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 188, 62);
+    color: rgb(105, 105, 105);
+    padding: 10px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.content2 .login input[type="button"]:hover {
+    background-color: rgb(255, 188, 62);
+    color: white;
+}
+
+
+.content2 .signup input[type="submit"]{
+    margin-top: 20px;
+    width: 50%;
+    background-color: transparent;
+    outline: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.content2 .signup input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(255, 188, 62);
+}
+
+.content2 .login{
+    border-radius: 0 10px 10px 0;
+}
+
+.content2 .signup{
+    border-radius: 10px 0 0 10px;
+}
