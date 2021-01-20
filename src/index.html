@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coin Clicker</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
@@ -29,41 +30,41 @@
         </div>
     </section>
     <section class="loja_section" id="loja">
-        <div class="shopLevel">
+        <div class="shopLevel" data-aos="flip-up">
             <h1>Shop Level: 1</h1>
             <button class="upgrade">UPGRADE</button>
         </div>
         <div class="container">
         <div class="loja">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                     <img src="./assets/svg/002-shekel.svg" alt="coin1">
                     <h1>Moeda 1</h1>
                     <h2>1000 Coins</h2>
                     <h3>Quantidade :</h3>
                     <input type="button" value="COMPRAR">
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="./assets/svg/003-coin-1.svg" alt="coin2">
                     <h1>Moeda 2</h1>
                     <h2>2500 Coins</h2>
                     <h3>Quantidade :</h3>
                     <input type="button" value="COMPRAR">
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="./assets/svg/004-rupee.svg" alt="coin3">
                     <h1>Moeda 3</h1>
                     <h2>5000 Coins</h2>
                     <h3>Quantidade :</h3>
                     <input type="button" value="COMPRAR">
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="./assets/svg/005-euro.svg" alt="coin4">
                     <h1>Moeda 4</h1>
                     <h2>7500 Coins</h2>
                     <h3>Quantidade :</h3>
                     <input type="button" value="COMPRAR">
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="./assets/svg/006-chinese-yuan.svg" alt="coin5">
                     <h1>Moeda 5</h1>
                     <h2>10000 Coins</h2>
@@ -74,5 +75,7 @@
         </div>
     </section>
     <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
 </body>
 </html>
