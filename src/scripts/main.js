@@ -3,7 +3,6 @@ let score = 0;
 let storeLevel = 1; 
 currentScore = () => {document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' + localStorage.score;}
 
-localStorage.setItem("score", "0")
 
 currentScore();
 
