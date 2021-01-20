@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family: 'Poppins';
 }
 
 body {
@@ -22,7 +23,6 @@ nav {
 
 header .logo h1,
 .container h1 {
-	font-family: 'Poppins';
 	font-weight: 400;
 	margin-left: 20px;
 	color: white;
@@ -43,7 +43,6 @@ header nav ul li {
 header nav ul li a {
 	text-decoration: none;
 	color: black;
-	font-family: 'Poppins';
 	font-weight: 400;
 	color: white;
 }
@@ -130,7 +129,6 @@ section {
 
 .card h2 {
 	text-align: center;
-	font-family: 'Poppins';
 	margin-top: 10px;
 	font-size: 35px;
 	color: rgb(240, 240, 240);
@@ -158,4 +156,28 @@ section {
 	transform: scale(1.05);
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
 	box-shadow: 0px 0px 10px rgba(250, 250, 250, 0.1);
+}
+
+.loja_section h1 {
+	color: rgb(240, 240, 240);
+}
+
+.shopLevel {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+.upgrade {
+	background-color: transparent;
+	margin-left: 1rem;
+	border: none;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	padding: 0.5rem;
+	background-color: rgb(255, 188, 62);
+	transition: 0.5s;
+	color: black;
+	cursor: pointer;
 }
