@@ -169,6 +169,8 @@ section {
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 .upgrade {
