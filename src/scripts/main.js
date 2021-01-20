@@ -29,3 +29,18 @@ function storeUp(){
         currentScore();
     } 
 }
+
+css_colormode = document.getElementsByClassName('css_colormode')[0]
+color_mode = document.getElementsByClassName('color_mode')[0]
+
+color_mode.addEventListener('click', () => {
+    if (css_colormode.getAttribute("href") == 'styles/main.css') {
+        css_colormode.href = 'styles/main_white.css'
+        color_mode.src = './assets/svg/sun_black.svg'
+
+    }
+    else{
+        css_colormode.href = 'styles/main.css'
+        color_mode.src = './assets/svg/sun_white.svg'
+    }
+})
