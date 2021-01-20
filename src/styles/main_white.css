@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins';
+}
+
+body {
+	background-color: #efefef;
+	overflow-x: hidden;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+
+nav {
+	margin-right: 20px;
+}
+
+header .logo h1,
+.container h1 {
+	font-weight: 400;
+	margin-left: 20px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+header nav ul li {
+	padding: 10px 15px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+header nav ul li:hover {
+	border-radius: 5px;
+	background-color: rgb(255, 188, 62);
+	transition: 0.5s;
+}
+
+header nav ul li:hover a {
+	color: black;
+	transition: 0.5s;
+}
+
+section {
+	height: calc(100vh - 80px);
+	background-color: #efefef;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.moeda {
+	display: flex;
+	justify-content: center;
+}
+
+.moeda img {
+	user-select: none;
+	transition: 0.2s;
+	width: 50%;
+}
+
+.infos h1 {
+	text-align: center;
+	margin: 50px 0;
+	font-size: 50px;
+}
+
+.loja {
+	padding: 50px 0 50px 0;
+	background-color: #ddd;
+	width: 80%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid black;
+	margin: 20px;
+	padding: 40px 70px 70px 70px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.card:hover {
+	transform: scale(1.015);
+}
+
+.card img {
+	width: 150px;
+	height: 150px;
+}
+
+.card h1 {
+    text-align: center;
+    color: black;
+	margin-top: 30px;
+	font-size: 35px;
+}
+
+.card h2 {
+	text-align: center;
+    color: black;
+	margin-top: 10px;
+	font-size: 35px;
+}
+
+.card h3 {
+	color: black;;
+}
+
+.card input {
+	margin-top: 30px;
+	padding: 15px;
+	font-size: 25px;
+	color: black;;
+	background-color: transparent;
+	border: 2px solid rgb(255, 188, 62);
+	border-radius: 360px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: transparent;
+}
+
+.card input:hover {
+	background-color: rgb(255, 188, 62);
+	transform: scale(1.05);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
+	box-shadow: 0px 0px 10px rgba(250, 250, 250, 0.1);
+}
+
+.loja_section h1 {
+	color: black;
+}
+
+.shopLevel {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.upgrade {
+	background-color: transparent;
+	margin-left: 1rem;
+	border: none;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	padding: 0.5rem;
+	background-color: rgb(255, 188, 62);
+	transition: 0.5s;
+	color: black;
+	cursor: pointer;
+}
+
+.color_mode {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+}
