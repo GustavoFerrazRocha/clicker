@@ -187,3 +187,11 @@ section {
 	color: black;
 	cursor: pointer;
 }
+
+.color_mode {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+}
