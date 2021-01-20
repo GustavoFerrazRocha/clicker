@@ -1,7 +1,16 @@
 const store = document.getElementById('store');
 let score = 0;
 let storeLevel = 1; 
-currentScore = () => {document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' + localStorage.score;}
+
+
+currentScore = () => {
+    if(localStorage.getItem("score") == null){
+        document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' + Number(score) ;
+    } else{
+        document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' +  localStorage.score;
+
+    }
+}
 
 
 currentScore();
@@ -11,7 +20,7 @@ function clickBtn(){
         if(localStorage.score){
             localStorage.score = Number(localStorage.score)+1;
         } else{
-            localStorage.score = 0;
+            localStorage.score = 1;
         }
         
     }
