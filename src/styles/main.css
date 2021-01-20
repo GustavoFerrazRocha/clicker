@@ -43,6 +43,7 @@ header nav ul li {
 header nav ul li a {
 	text-decoration: none;
 	color: black;
+
 	font-weight: 400;
 	color: white;
 }
@@ -129,6 +130,7 @@ section {
 
 .card h2 {
 	text-align: center;
+
 	margin-top: 10px;
 	font-size: 35px;
 	color: rgb(240, 240, 240);
@@ -173,6 +175,7 @@ section {
 	background-color: transparent;
 	margin-left: 1rem;
 	border: none;
+
 	font-size: 1.2rem;
 	border-radius: 5px;
 	padding: 0.5rem;
