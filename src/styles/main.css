@@ -1,157 +1,161 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
-body{
-    background-color: #252525;
+body {
+	background-color: #252525;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
 }
 
-nav{
-    margin-right: 20px;
+nav {
+	margin-right: 20px;
 }
 
-header .logo h1, .container h1{
-    font-family: 'Poppins';
-    font-weight: 400;
-    margin-left: 20px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
+header .logo h1,
+.container h1 {
+	font-family: 'Poppins';
+	font-weight: 400;
+	margin-left: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-header nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+header nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
 }
 
-header nav ul li{
-    padding: 10px 15px;
+header nav ul li {
+	padding: 10px 15px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Poppins';
-    font-weight: 400;
-    color: white;
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Poppins';
+	font-weight: 400;
+	color: white;
 }
 
-header nav ul li:hover{
-    border-radius: 5px;
-    background-color: rgb(255, 188, 62);
-    transition: 0.5s;
+header nav ul li:hover {
+	border-radius: 5px;
+	background-color: rgb(255, 188, 62);
+	transition: 0.5s;
 }
 
-header nav ul li:hover a{
-    color: black;
-    transition: 0.5s;
+header nav ul li:hover a {
+	color: black;
+	transition: 0.5s;
 }
 
-
-section{
-    height: calc(100vh - 80px);
-    background-color: #252525;
+section {
+	height: calc(100vh - 80px);
+	background-color: #252525;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.column{
-    display: flex;
-    flex-direction: column;
-}
-
-.moeda{
-    display: flex;
-    justify-content: center;
+.column {
+	display: flex;
+	flex-direction: column;
 }
 
-.moeda img{
-    user-select: none;
-    transition: .2s;
-    width: 50%;
+.moeda {
+	display: flex;
+	justify-content: center;
 }
 
-.infos h1{
-    text-align: center;
-    margin: 50px 0;
-    font-size: 50px;
+.moeda img {
+	user-select: none;
+	transition: 0.2s;
+	width: 50%;
 }
 
-.loja{
-    padding: 50px 0 50px 0;
-    background-color: #303030;
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;
+.infos h1 {
+	text-align: center;
+	margin: 50px 0;
+	font-size: 50px;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid white;
-    margin: 20px;
-    padding: 40px 70px 70px 70px;
-    border-radius: 10px;
-    transition: .5s;
+.loja {
+	padding: 50px 0 50px 0;
+	background-color: #303030;
+	width: 80%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-radius: 10px;
 }
 
-.card:hover{
-    transform: scale(1.015);
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid white;
+	margin: 20px;
+	padding: 40px 70px 70px 70px;
+	border-radius: 10px;
+	transition: 0.5s;
 }
 
-.card img{
-    width: 150px;
-    height: 150px;
+.card:hover {
+	transform: scale(1.015);
 }
 
-.card h1{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 35px;
+.card img {
+	width: 150px;
+	height: 150px;
 }
 
-.card h2{
-    text-align: center;
-    font-family: 'Poppins';
-    margin-top: 10px;
-    font-size: 35px;
-    color: rgb(240, 240, 240);
+.card h1 {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 35px;
 }
 
-.card input{
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 25px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid rgb(255, 188, 62);
-    border-radius: 360px;
-    transition: .3s;
-    cursor: pointer;
-    outline: transparent;
+.card h2 {
+	text-align: center;
+	font-family: 'Poppins';
+	margin-top: 10px;
+	font-size: 35px;
+	color: rgb(240, 240, 240);
+}
+
+.card h3 {
+	color: rgb(240, 240, 240);
+}
+
+.card input {
+	margin-top: 30px;
+	padding: 15px;
+	font-size: 25px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid rgb(255, 188, 62);
+	border-radius: 360px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: transparent;
 }
 
 .card input:hover {
-    background-color: rgb(255, 188, 62);
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 10px rgba(250, 250, 250, 0.1);
+	background-color: rgb(255, 188, 62);
+	transform: scale(1.05);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.39);
+	box-shadow: 0px 0px 10px rgba(250, 250, 250, 0.1);
 }
