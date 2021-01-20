@@ -1,0 +1,41 @@
+body {
+	background-color: #efefef;
+}
+header .logo h1,
+.container h1 {
+	color: black;
+}
+header nav ul li a {
+	color: black;
+}
+header nav ul li:hover a {
+	color: black;
+}
+section {
+	background-color: #efefef;
+}
+.loja {
+	background-color: #eee;
+}
+
+.card {
+	border: 2px solid black;
+}
+.card h2 {
+	color: black;
+}
+.card h3 {
+	color: black;
+}
+.card input {
+	color: black;
+}
+.loja_section h1 {
+	color: black;
+}
+.shopLevel {
+	color: black;
+}
+.upgrade {
+	color: white;
+}
