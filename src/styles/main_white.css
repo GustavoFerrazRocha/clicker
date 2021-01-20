@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #252525;
+	background-color: #efefef;
 	overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ header .logo h1,
 .container h1 {
 	font-weight: 400;
 	margin-left: 20px;
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -44,9 +44,7 @@ header nav ul li {
 header nav ul li a {
 	text-decoration: none;
 	color: black;
-
 	font-weight: 400;
-	color: white;
 }
 
 header nav ul li:hover {
@@ -62,7 +60,7 @@ header nav ul li:hover a {
 
 section {
 	height: calc(100vh - 80px);
-	background-color: #252525;
+	background-color: #efefef;
 }
 
 .container {
@@ -94,7 +92,7 @@ section {
 
 .loja {
 	padding: 50px 0 50px 0;
-	background-color: #303030;
+	background-color: #ddd;
 	width: 80%;
 	height: auto;
 	display: flex;
@@ -107,7 +105,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 2px solid white;
+	border: 2px solid black;
 	margin: 20px;
 	padding: 40px 70px 70px 70px;
 	border-radius: 10px;
@@ -124,28 +122,28 @@ section {
 }
 
 .card h1 {
-	text-align: center;
+    text-align: center;
+    color: black;
 	margin-top: 30px;
 	font-size: 35px;
 }
 
 .card h2 {
 	text-align: center;
-
+    color: black;
 	margin-top: 10px;
 	font-size: 35px;
-	color: rgb(240, 240, 240);
 }
 
 .card h3 {
-	color: rgb(240, 240, 240);
+	color: black;;
 }
 
 .card input {
 	margin-top: 30px;
 	padding: 15px;
 	font-size: 25px;
-	color: white;
+	color: black;;
 	background-color: transparent;
 	border: 2px solid rgb(255, 188, 62);
 	border-radius: 360px;
@@ -162,7 +160,7 @@ section {
 }
 
 .loja_section h1 {
-	color: rgb(240, 240, 240);
+	color: black;
 }
 
 .shopLevel {
@@ -178,7 +176,6 @@ section {
 	background-color: transparent;
 	margin-left: 1rem;
 	border: none;
-
 	font-size: 1.2rem;
 	border-radius: 5px;
 	padding: 0.5rem;
