@@ -16,16 +16,19 @@ currentScore = () => {
         document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' + Number(score) ;
     } else{
         document.getElementsByClassName('coin')[0].innerHTML = 'Coins: ' +  localStorage.score;
-
+        document.getElementById('costShop').innerHTML = 'Cost: ' + Number(localStorage.storeLevel) * 100  + ' coins'
+        if (localStorage.storeLevel == 100){
+            document.getElementById('costShop').innerHTML = 'Max Limit Reached'
+        }
     }
 }
 currentStoreLevel = () => {
     if(localStorage.getItem("storeLevel") == null){
-        document.getElementById('shopLevel').innerHTML = "Shop Level: " + Number(storeLevel) ;
+        document.getElementById('shopLevel').innerHTML = "Next Shop Level: " + Number(storeLevel) ;
         
     } else{
-        document.getElementById('shopLevel').innerHTML = 'Shop Level: ' +  localStorage.storeLevel;
-
+        document.getElementById('shopLevel').innerHTML = 'Next Shop Level: ' +  localStorage.storeLevel;
+        document.getElementById('costShop').innerHTML = 'Cost: ' + Number(storeLevel) * 100  + ' coins'
     }
 }
 currentStoreLevel();
@@ -34,8 +37,8 @@ currentScore();
 function clickBtn(){
     localStorage.score++;
     currentScore();
-    coin.style.transform = 'scale(1.1)';
-    setInterval(function(){coin.style.transform = 'scale(1.0)'},  500);
+    coin.style.transform = 'scale(0.9)';
+    setTimeout(() => {coin.style.transform = 'scale(1.0)'},  50);
 
 }
 
@@ -46,13 +49,14 @@ function storeUp(){
     
     
     if (storeLevel <= 99 && score >= scoreMin ) {
-        if(Number(localStorage.storeLevel) <= 99 ){
-         localStorage.storeLevel = Number(localStorage.storeLevel)+1;
-         }
-        score = score - (100 * storeLevel);
+        score = localStorage.score - (100 * storeLevel);
+        localStorage.storeLevel = Number(localStorage.storeLevel)+1;
         storeLevel++;
         localStorage.score = score;
         currentStoreLevel();
         currentScore();
-        }            
+        }
+    else{
+        document.getElementById('costShop').innerHTML = 'Max Limit Reached'
+    }
 }
