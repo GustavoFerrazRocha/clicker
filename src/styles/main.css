@@ -23,7 +23,7 @@ nav {
 }
 
 header .logo h1,
-.container h1 {
+.container {
 	font-weight: 400;
 	margin-left: 20px;
 	color: white;
@@ -201,4 +201,90 @@ section {
 	right: 50px;
 	width: 50px;
 	height: 50px;
+}
+
+@media only screen and (min-width:420px) and (max-width:500px){
+
+	.loja{
+		width: 90%;
+	}
+
+	.logo h1{
+		font-size: 18px;
+	}
+
+	.infos h1{
+		font-size: 35px;
+	}
+
+	.flex{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card h1{
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.card h2{
+		font-size: 30px;
+	}
+
+	.card h3{
+		font-size: 20px;
+	}
+
+	.flex h1{
+		font-size: 35px;
+	}
+
+	.shopLevel h2{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width:300px) and (max-width:420px){
+
+	.loja{
+		width: 90%;
+	}
+
+	.logo h1{
+		font-size: 18px;
+	}
+
+	.infos h1{
+		font-size: 35px;
+	}
+
+	.flex{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.card{
+		width: 80%;
+	}
+
+	.card h1{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.card h2{
+		font-size: 25px;
+	}
+
+	.card h3{
+		font-size: 18px;
+	}
+
+	.flex h1{
+		font-size: 35px;
+	}
+
+	.shopLevel h2{
+		font-size: 30px;
+	}
 }
